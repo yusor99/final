@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  font-family: sans-serif;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+header {
+  position: fixed;
+  background-color: rgb(224, 221, 221);
+  width: 100%;
+  top: 0px;
+  z-index: 10;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info small {
+  color: rgb(70, 69, 69);
+}
+img {
+  width: 100%;
+  margin: auto;
+}
+.info-p {
+  color: rgb(70, 69, 69);
+  font-size: 16px;
+  margin-top: 10px;
+}
+.dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: rgb(70, 69, 69);
+}
+.footer .container {
+  background-color: rgb(224, 221, 221);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer img {
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+}
+.footer {
+  background-color: rgb(224, 221, 221);
+  margin-top: 30px;
+  padding: 20px;
+}
+.overlay .container h1 {
+  color: yellow;
+  animation: fadin 0.8s;
+  font-size: 40px;
+  margin-top: 180px;
+}
+.overlay div {margin-top: 200px;
+    justify-content: left;
+
+}
+.cover-home img{width: 100%;
+height: 100%;
+object-fit: cover;
+}
+.cover-home{position: relative;
+height: 488;
+overflow: hidden;}
+.overlay{ width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #7c7b7b70;
+   
+    height: 100%;}
+    
+.overlay .container p {
+  color: rgb(252, 252, 252);
+  font-size: 30px;
+}
+@keyframes fadin {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.cards{margin-top: -100px;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr) ;
+    grid-column-gap: 50px;
+    
+}
+.card-footer{ justify-content: space-between; display: flex; align-items: center;}
+.card-footer a{ text-decoration: none; color: blue; font-size: large;}
+@media only screen and (max-width :800px){
+.cards{margin-left: 25px; margin-right: 25px;
+    grid-template-columns: repeat(2,1fr) ;
+    grid-column-gap: 30px;
+}
+.card{margin-bottom: 25px;}}
+.card{margin-bottom: 45px;}
+@media screen and (max-width: 450px){
+  .home-cover .overlay h1{
+    font-size: 36px;
+}
+.home-cover .overlay p{
+    font-size: 20px;
+}
+
+.home-cover{
+    height: 400px;}
+}
